@@ -83,3 +83,68 @@ for (let i = 0; i < array4.length; i++) {
 }
   
 // 7
+
+function ricxvebi(...numb) {
+    let sum = 0;
+    for (let item of numb) {
+        if (item > 0) {
+           sum += item; 
+        }
+        
+    }
+    console.log(sum);
+}
+
+ricxvebi(2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8);
+
+// 8
+
+let user = {
+    firstname: 'giorgi',
+    lastname: 'saakadze',
+    age: 32,
+    isloggedin: true
+  }
+  function human(user) {
+    if (user.isloggedin == true) {
+        console.log(user.firstname + ' ' + user.lastname);
+    }else if (user.isloggedin == false) {
+        console.log(false);
+    }
+  }
+human(user);  
+  
+// 9
+
+function maximum(...number){
+    let maxnum= 0;
+  for(let maxnumber of number){
+  
+    if(maxnumber>maxnum){
+        maxnum=maxnumber;
+    }
+}
+    return maxnum;
+  }
+
+let max=maximum(2, 8, -5, 821, 5, 0,-54, 1993);
+console.log(max);
+
+// 10
+let array = [1, 2, 4, 10, 34, 5, 7, 87]
+for (let item of array){
+    if (item > 0 && item < 10) {
+        console.log(item);
+    }
+}
+
+// 11
+
+let numbers3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for(let N of numbersarray){
+    if(N == 5){
+        break;        
+    }
+    console.log(N);    
+}
+
